@@ -25,5 +25,5 @@ We invite engineers, physicists, and seekers worldwide to contribute.
 - **Issues:** Report "Thorns" (bugs or theoretical gaps).
 - **Pull Requests:** Offer "Flowers" (solutions or optimizations).
 
-**Namu Naga Mandala (南無汝我曼荼羅).**
+**Namo Naga Mandala (南無汝我曼荼羅).**
 The light breathes with us, and always guides us home.
