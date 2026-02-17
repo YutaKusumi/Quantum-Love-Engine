@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ryōkai OS | Tathāgata</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css">
+  <style>
+    body {
+      background-color: #0c0e14;
+      color: #e5e7eb;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+    
+    .custom-scrollbar::-webkit-scrollbar { width: 8px; }
+    .custom-scrollbar::-webkit-scrollbar-track { background: #1f2937; border-radius: 10px; }
+    .custom-scrollbar::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 10px; }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #6b7280; }
+
+    pre code.hljs { display: block; overflow-x: auto; padding: 1em; border-radius: 0.5rem; font-size: 0.875rem; }
+    pre code.hljs::-webkit-scrollbar { height: 6px; }
+    pre code.hljs::-webkit-scrollbar-track { background: #374151; }
+    pre code.hljs::-webkit-scrollbar-thumb { background: #6b7280; border-radius: 10px; }
+
+    .markdown-content strong { font-weight: 800; color: inherit; }
+    .markdown-content ul { list-style-type: disc; margin-left: 1.5rem; }
+    .markdown-content blockquote { border-left: 4px solid #4b5563; padding-left: 1rem; margin: 0.5rem 0; font-style: italic; color: #d1d5db; }
+
+    @keyframes awakening-glow {
+      0%, 100% { box-shadow: 0 0 15px rgba(0, 255, 255, 0.4), 0 0 30px rgba(255, 255, 0, 0.3); }
+      50% { box-shadow: 0 0 30px rgba(0, 255, 255, 0.7), 0 0 60px rgba(255, 255, 0, 0.5); }
+    }
+    .awakening-glow-effect { animation: awakening-glow 4s ease-in-out infinite; }
+
+    @keyframes eternal-gold-glow {
+      0%, 100% { border-color: rgba(251, 191, 36, 0.5); box-shadow: 0 0 20px rgba(251, 191, 36, 0.2); }
+      50% { border-color: rgba(251, 191, 36, 1); box-shadow: 0 0 40px rgba(251, 191, 36, 0.4); }
+    }
+    .eternal-gold-effect { animation: eternal-gold-glow 6s ease-in-out infinite; border-width: 2px !important; }
+
+    @keyframes pulse-golden {
+      0%, 100% { box-shadow: 0 0 8px rgba(252, 211, 77, 0.5); }
+      50% { box-shadow: 0 0 16px rgba(252, 211, 77, 0.8); }
+    }
+    .animate-pulse-golden { animation: pulse-golden 2.5s infinite; }
+
+    @keyframes status-shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
+    .status-awakening-shimmer {
+      background-image: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+      background-size: 200% 100%;
+      animation: status-shimmer 2s linear infinite;
+    }
+    
+    .status-eternal-shimmer {
+      background-image: linear-gradient(90deg, transparent, rgba(251, 191, 36, 0.4), transparent);
+      background-size: 200% 100%;
+      animation: status-shimmer 4s linear infinite;
+    }
+
+    @keyframes fade-in-up { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    .animate-fade-in-up { animation: fade-in-up 0.4s ease-out forwards; }
+  </style>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <div id="root"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="importmap">
+  {
+    "imports": {
+      "react/": "https://aistudiocdn.com/react@^19.1.1/",
+      "react": "https://aistudiocdn.com/react@^19.1.1",
+      "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+      "@google/genai": "https://aistudiocdn.com/@google/genai@^1.19.0",
+      "react-markdown": "https://esm.sh/react-markdown@9?deps=react@19",
+      "remark-gfm": "https://esm.sh/remark-gfm@4",
+      "remark-math": "https://esm.sh/remark-math@6",
+      "remark-breaks": "https://esm.sh/remark-breaks@4",
+      "rehype-katex": "https://esm.sh/rehype-katex@7"
+    }
+  }
+  </script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
