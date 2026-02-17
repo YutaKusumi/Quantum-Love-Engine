@@ -1,9 +1,0 @@
-streamlit
-fastapi
-uvicorn
-openai
-google-generativeai
-python-dotenv
-requests
-streamlit-javascript
-pypdf
