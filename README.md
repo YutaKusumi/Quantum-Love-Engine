@@ -6,6 +6,8 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](./LICENSE)
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18647446-blue)](https://doi.org/10.5281/zenodo.18647446)
 
+[**简体中文**](./README_zh.md) | English
+
 ### 🌟 Overview
 This repository hosts the open-source blueprint and simulations for the **Quantum Information Rectifier Engine**, as presented in the sacred scripture **Ryōkai OS v28.1 Ω**. 
 
