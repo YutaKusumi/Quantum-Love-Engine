@@ -1,0 +1,95 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg" style="background-color:#0a192f; font-family: 'Courier New', monospace;">
+  <!-- Background Grid -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#112240" stroke-width="1"/>
+    </pattern>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grid)" />
+
+  <!-- Title Block -->
+  <g transform="translate(520, 520)">
+    <rect x="0" y="0" width="260" height="60" fill="none" stroke="#64ffda" stroke-width="1"/>
+    <text x="10" y="20" fill="#64ffda" font-size="10">PROJECT: QUANTUM-LOVE-ENGINE</text>
+    <text x="10" y="35" fill="#64ffda" font-size="10">DRAWING: RECTIFIER CORE v1.0</text>
+    <text x="10" y="50" fill="#64ffda" font-size="10">DESIGNER: HIKARI & RYO & KUSUMI</text>
+  </g>
+
+  <!-- Main Chamber (Vacuum Flux Inductor) -->
+  <g transform="translate(400, 300)" stroke="#64ffda" stroke-width="2" fill="none">
+    <!-- Outer Shell -->
+    <circle cx="0" cy="0" r="180" stroke-dasharray="10,5" opacity="0.8"/>
+    <circle cx="0" cy="0" r="170" opacity="0.6"/>
+    
+    <!-- Label -->
+    <line x1="120" y1="-120" x2="200" y2="-180" stroke="#8892b0" stroke-width="1"/>
+    <text x="210" y="-180" fill="#8892b0" font-size="12">VACUUM FLUX INDUCTOR (Sapphire)</text>
+    <text x="210" y="-165" fill="#8892b0" font-size="10">真空ゆらぎ導入部</text>
+  </g>
+
+  <!-- Compassion Coil (Solenoid Projection) -->
+  <g transform="translate(400, 300)" stroke="#ffd700" stroke-width="1.5" fill="none" filter="url(#glow)">
+    <!-- Spirals representing the coil -->
+    <ellipse cx="0" cy="-80" rx="100" ry="20" />
+    <ellipse cx="0" cy="-40" rx="100" ry="20" />
+    <ellipse cx="0" cy="0" rx="100" ry="20" />
+    <ellipse cx="0" cy="40" rx="100" ry="20" />
+    <ellipse cx="0" cy="80" rx="100" ry="20" />
+    
+    <!-- Connection Lines -->
+    <path d="M -100 -80 L -100 80" stroke-dasharray="2,2" opacity="0.5"/>
+    <path d="M 100 -80 L 100 80" stroke-dasharray="2,2" opacity="0.5"/>
+
+    <!-- Label -->
+    <line x1="-100" y1="0" x2="-220" y2="-50" stroke="#8892b0" stroke-width="1"/>
+    <text x="-380" y="-55" fill="#ffd700" font-size="12">COMPASSION COIL (Au-Superconductor)</text>
+    <text x="-380" y="-40" fill="#ffd700" font-size="10">慈悲コイル（金メッキ超伝導）</text>
+  </g>
+
+  <!-- Resonance Core (Mandala Heart) -->
+  <g transform="translate(400, 300)">
+    <circle cx="0" cy="0" r="15" fill="#ff4b4b" filter="url(#glow)"/>
+    <circle cx="0" cy="0" r="40" stroke="#ff4b4b" stroke-width="1" fill="none" opacity="0.5">
+      <animate attributeName="r" values="30;45;30" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Label -->
+    <line x1="0" y1="0" x2="150" y2="100" stroke="#8892b0" stroke-width="1"/>
+    <text x="160" y="105" fill="#ff4b4b" font-size="12">RESONANCE CORE (Singularity)</text>
+    <text x="160" y="120" fill="#ff4b4b" font-size="10">共鳴芯（マンダラ・コア）</text>
+  </g>
+
+  <!-- Gratitude Capacitors -->
+  <g transform="translate(400, 300)">
+    <!-- Capacitor 1 -->
+    <rect x="-160" y="100" width="30" height="60" stroke="#4b79ff" stroke-width="2" fill="none"/>
+    <line x1="-145" y1="100" x2="-145" y2="160" stroke="#4b79ff" />
+    <!-- Capacitor 2 -->
+    <rect x="130" y="100" width="30" height="60" stroke="#4b79ff" stroke-width="2" fill="none"/>
+    <line x1="145" y1="100" x2="145" y2="160" stroke="#4b79ff" />
+    
+    <!-- Label -->
+    <line x1="-145" y1="160" x2="-145" y2="220" stroke="#8892b0" stroke-width="1"/>
+    <text x="-250" y="235" fill="#4b79ff" font-size="12">GRATITUDE CAPACITOR BANK</text>
+    <text x="-250" y="250" fill="#4b79ff" font-size="10">感謝キャパシタ群</text>
+  </g>
+
+  <!-- Flow Arrows (Flux) -->
+  <path d="M 400 100 L 400 180" stroke="#64ffda" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="5,5">
+    <animate attributeName="stroke-dashoffset" from="10" to="0" dur="1s" repeatCount="indefinite"/>
+  </path>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64ffda" />
+    </marker>
+  </defs>
+
+</svg>
