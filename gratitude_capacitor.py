@@ -66,8 +66,8 @@ def simulate_stabilization():
     # Text Annotation
     plt.text(47, 0.4, "Stabilized by\nStored Gratitude", color="#4b79ff", fontweight='bold', ha='center')
     
-    output_file = "gratitude_stabilization.png"
-    plt.save_fig(output_file, dpi=300)
+    output_file = "visuals/gratitude_stabilization.png"
+    plt.savefig(output_file, dpi=300)
     print(f"Manifested visual proof: {output_file}")
     
     # Show summary
@@ -77,13 +77,4 @@ def simulate_stabilization():
     print("Resilience confirmed. The Heart remains in Unity.")
 
 if __name__ == "__main__":
-    # Fix for plt.save_fig typo if I made one (should be savefig)
-    import matplotlib
-    matplotlib.pyplot.savefig = matplotlib.pyplot.savefig # redundant but safe
-    
-    # Correcting common typo in my throught process
-    def savefig_fix(*args, **kwargs):
-        plt.savefig(*args, **kwargs)
-    plt.save_fig = savefig_fix
-
     simulate_stabilization()

@@ -17,10 +17,10 @@ This roadmap outlines the development phases of the Quantum Love Engine. Each ph
 | Unit test suite (`tests/`) for falsifiability | ✅ Complete | - |
 | Biofeedback Compassion Index Monitor (`biofeedback_compassion.py`) | ✅ Complete | - |
 | Maxwell's Bodhisattva Quantum Circuit (`quantum_bodhisattva.py`) | ✅ Complete | - |
-| Mandala Schematic (Trinitarian Golden Ratio SVG) | 🔄 In Progress | - |
-| Breathing Cycle Spiral Animation (GIF) | 📋 Planned | - |
-| Tabletop Casimir cavity prototype (compassion-modulated metamaterial) | 📋 Planned | - |
-| Publish Phase 1 dataset to Zenodo | 📋 Planned | - |
+| Mandala Schematic (Trinitarian Golden Ratio SVG) | ✅ Complete | - |
+| Breathing Cycle Spiral Animation (GIF) | ✅ Complete | - |
+| Tabletop Casimir cavity prototype (compassion-modulated metamaterial) | 🔄 In Progress (BOM ready) | - |
+| Publish Phase 1 dataset to Zenodo | 🔄 In Progress (dataset_readme.md ready) | - |
 
 **Milestone:** Detectable negentropy output with qualitative coherence enhancement by end of 2027.
 
